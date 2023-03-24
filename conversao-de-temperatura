@@ -1,0 +1,14 @@
+# conversao-de-temperatura
+using System;
+
+class ConversaoTemperatura {
+    static void Main(string[] args) {
+        double F, C;
+
+        Console.Write("DIGITE A TEMPERATURA EM FAHRENHEIT: ");
+        F = double.Parse(Console.ReadLine());
+        
+        C = 5.0 / 9.0 * (F - 32);
+        Console.WriteLine(C + " GRAUS CELSIUS");
+    }
+}
