@@ -1,0 +1,14 @@
+using System;
+
+class ConversaoDeTempo {
+    static void Main(string[] args) {
+        int T, H, M, S, RESTO;
+        Console.Write("Digite o tempo (s): ");
+        T = int.Parse(Console.ReadLine());
+        H = T / 3600;
+        RESTO = T % 3600;
+        M = RESTO / 60;
+        S = RESTO % 60;
+        Console.WriteLine(H + "h " + M + "m " + S + "s");
+    }
+}
