@@ -1,0 +1,26 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <locale.h>
+
+int main() { 
+
+	setlocale( LC_ALL, "Portuguese"); 
+
+	float vi, a, t;  
+
+	printf("Digite a velocidade inicial (m/s): ");  
+	scanf("%f", &vi);  
+
+	printf("Digite a aceleração: "); 
+	scanf("%f", &a); 
+
+	printf("Digite o tempo (em s): "); 
+	scanf("%f", &t); 
+  
+	float vf = vi + a/t;  
+
+	printf("A velocidade do objeto é %.2f m/s", vf);  
+
+    return 0;  
+
+} 
