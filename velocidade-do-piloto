@@ -1,0 +1,27 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <math.h>
+
+int main(int argc, char *argv[]) { 
+
+float d, t, v; 
+char p[20];
+
+	  printf("Digite o nome do piloto:"); 
+	  scanf("%s", p); 
+  
+    printf("Digite a distância percorrida (em KM):"); 
+	  scanf("%f", &d); 
+
+    printf("Digite o tempo levado para percorrer em Hs: "); 
+	  scanf("%f", &t); 
+    
+	if (t!=0)
+	{
+	    v = d/t;
+	}
+	printf("A velocidade média de %s foi %.2f Km/h", p, v); 
+
+	return 0; 
+
+}
