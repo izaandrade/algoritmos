@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	char nome[30], sexo;
+	
+	printf("Digite seu nome: ");
+	scanf("%s", nome);
+	
+	printf("Digite 'f' para feminino ou 'm' para masculino: ");
+	scanf(" %c", &sexo);
+	
+	printf("\nNome: '%s'\nSexo: ' %c'\n", nome, sexo);
+	
+	switch( sexo ){
+		case 'f':
+		case 'F':
+			printf("Ilma. Sra. %s\n", nome);
+			break;
+		case 'm':
+		case 'M':
+			printf("Ilmo. Sr. %s\n", nome);
+			break;
+		default:
+		    printf("Entrada invalida!");
+			
+    return 0; 
+	}
+}
