@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (int argc, char *argv[]) {
+    int n, cont, x, soma, media;
+    
+    cont = 1;
+    float x, soma = 0;
+    
+    printf("Quantos números: ");
+    scanf("%d", &n);
+    
+    while( cont <= n ){
+        printf("Digite o %i° numero: ", cont );
+        scanf( "%f", &x);
+        
+        soma = soma +x;
+        cont = cont +1;
+    }
+    
+    if (n > 0){
+        float media = soma / n;
+        printf("Media = %f\n", media);
+    }
+    esle{
+        printf("Entrada invalida\n");
+    }
+    return 0;
+    
+}
+
