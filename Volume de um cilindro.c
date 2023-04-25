@@ -1,0 +1,18 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <math.h>
+
+int main(int argc, char *argv[]) { 
+
+	float f; 
+
+	printf("Digite a teperatura em Fahrenheit: "); 
+	scanf("%f", &f); 
+
+	float c = 5.0/9 * (f - 32);  // em c não temos operador div, então para divisões inteiras usamos (barra) e divisões reais um dos fatores da divisão precisa ter .0
+
+	printf("%.2f graus celcius\n", c); 
+
+	return 0; 
+
+} 
