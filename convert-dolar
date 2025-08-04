@@ -1,0 +1,21 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <math.h>
+
+int main(int argc, char *argv[]) { 
+
+	float taxa, dol, real;
+
+	printf("Insira a taxa de cambio: ");
+    scanf("%f", &taxa);
+
+   	printf("Insira o valor em reais: ");
+    scanf("%f", &real);
+
+    dol = real * taxa;
+
+	printf("O valor R$ %.2f eh equivalente a $ %.2f", real, dol);
+
+    return 0;
+
+}
